@@ -7,7 +7,7 @@ export default function Navbar() {
         </a>
         <ul className="flex items-center gap-[50px] w-fit">
           <li>
-            <a href="">Browse</a>
+            <a href="">Home</a>
           </li>
           <li>
             <a href="">Popular</a>

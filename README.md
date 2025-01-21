@@ -10,6 +10,6 @@
 - Markup Language: HTML.
 - Stylesheet Language: CSS.
 - Framework: Tailwind CSS.
-- Libraries: React, React Router, Swiper.
+- Libraries: React, React Router, Swiper, Axios.
 - Tool: Vite.
 - Software: Visual Studio Code.
