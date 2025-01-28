@@ -3,6 +3,7 @@ import CityCard from "../components/CityCard";
 import { useEffect, useState } from "react";
 import { City } from "../types/type";
 import axios from "axios";
+import { Link } from "react-router";
 
 export default function HomeCityWrapper() {
   const [cities, setCities] = useState<City[]>([]);
@@ -64,7 +65,9 @@ export default function HomeCityWrapper() {
                 key={city.id}
                 className="!w-fit first-of-type:pl-[calc((100%-1130px-60px)/2)] last-of-type:pr-[calc((100%-1130px-60px)/2)]"
               >
-                <CityCard city={city} />
+                <Link to={`/city/${city.slug}`}>
+                  <CityCard city={city} />
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

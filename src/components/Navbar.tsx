@@ -1,13 +1,15 @@
+import { Link } from "react-router";
+
 export default function Navbar() {
   return (
     <nav className="bg-white">
       <div className="flex items-center justify-between w-full max-w-[1130px] py-[22px] mx-auto">
-        <a href="index.html">
+        <Link to={"/"}>
           <img src="/assets/images/logos/logo.svg" alt="logo" />
-        </a>
+        </Link>
         <ul className="flex items-center gap-[50px] w-fit">
           <li>
-            <a href="">Home</a>
+            <Link to={"/"}>Home</Link>
           </li>
           <li>
             <a href="">Popular</a>
@@ -19,7 +21,7 @@ export default function Navbar() {
             <a href="">Events</a>
           </li>
           <li>
-            <a href="view-booking-details.html">My Booking</a>
+            <Link to={"/check-booking"}>My Booking</Link>
           </li>
         </ul>
         <a
