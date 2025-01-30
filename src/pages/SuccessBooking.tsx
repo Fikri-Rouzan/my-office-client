@@ -1,4 +1,4 @@
-import { useLocation } from "react-router";
+import { Link, useLocation } from "react-router";
 
 export default function SuccessBooking() {
   const location = useLocation();
@@ -59,12 +59,12 @@ export default function SuccessBooking() {
           Your order is being processed. We will notify you of the status via
           SMS
         </p>
-        <a
-          href="view-booking-details.html"
+        <Link
+          to={"/check-booking"}
           className="flex items-center justify-center w-full rounded-full p-[16px_26px] gap-3 bg-[#0D903A] font-bold text-[#F7F7FD]"
         >
           <span>View Booking Details</span>
-        </a>
+        </Link>
       </div>
     </section>
   );

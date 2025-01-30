@@ -22,8 +22,8 @@ export default function HomeHeroWrapper() {
             Grow Your Business.
           </h1>
           <p className="text-lg leading-8 text-[#000929]">
-            Kantor yang tepat dapat memberikan impact pekerjaan menjadi lebih
-            baik dan sehat dalam tumbuhkan karir.
+            The right office can positively impact your work, making it better
+            and healthier, fostering career growth.
           </p>
           <div className="flex items-center gap-5">
             <a

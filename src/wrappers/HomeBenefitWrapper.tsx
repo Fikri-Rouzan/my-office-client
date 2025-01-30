@@ -22,7 +22,8 @@ export default function HomeBenefitWrapper() {
               Privacy-First Design
             </p>
             <p className="text-sm leading-[24px]">
-              My Office available without even higher tax that cost much
+              Ensures a distraction-free workspace for better focus and
+              productivity
             </p>
           </div>
         </div>
@@ -37,7 +38,7 @@ export default function HomeBenefitWrapper() {
           <div className="flex flex-col gap-[5px]">
             <p className="font-bold text-lg leading-[27px]">Easy Move Access</p>
             <p className="text-sm leading-[24px]">
-              My Office available without even higher tax that cost much
+              Provides seamless access for effortless mobility and convenience
             </p>
           </div>
         </div>
@@ -54,7 +55,7 @@ export default function HomeBenefitWrapper() {
               Flexibility Spaces
             </p>
             <p className="text-sm leading-[24px]">
-              My Office available without even higher tax that cost much
+              Offers adaptable workspaces tailored to various needs
             </p>
           </div>
         </div>
@@ -69,7 +70,8 @@ export default function HomeBenefitWrapper() {
           <div className="flex flex-col gap-[5px]">
             <p className="font-bold text-lg leading-[27px]">Top-Rated Office</p>
             <p className="text-sm leading-[24px]">
-              My Office available without even higher tax that cost much
+              Delivers high-quality office standards for maximum comfort and
+              efficiency
             </p>
           </div>
         </div>
@@ -86,7 +88,7 @@ export default function HomeBenefitWrapper() {
               Extra Snacks Available
             </p>
             <p className="text-sm leading-[24px]">
-              My Office available without even higher tax that cost much
+              Keeps you energized with complimentary snacks for a productive day
             </p>
           </div>
         </div>
@@ -103,7 +105,7 @@ export default function HomeBenefitWrapper() {
               Sustain for Business
             </p>
             <p className="text-sm leading-[24px]">
-              My Office available without even higher tax that cost much
+              Supports long-term business growth with reliable facilities
             </p>
           </div>
         </div>

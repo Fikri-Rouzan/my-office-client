@@ -209,10 +209,10 @@ export default function BookOffice() {
                   className="appearance-none outline-none w-full py-3 font-semibold placeholder:font-normal placeholder:text-[#000929]"
                   placeholder="Write your complete name"
                 />
-                {formError.find((error) => error.path.includes("name")) && (
-                  <p className="text-red-500">Name is required</p>
-                )}
               </div>
+              {formError.find((error) => error.path.includes("name")) && (
+                <p className="text-red-500">Name is required</p>
+              )}
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="phone" className="font-semibold">
@@ -233,10 +233,10 @@ export default function BookOffice() {
                   className="appearance-none outline-none w-full py-3 font-semibold placeholder:font-normal placeholder:text-[#000929]"
                   placeholder="Write your valid number"
                 />
-                {formError.find((error) =>
-                  error.path.includes("phone_number")
-                ) && <p className="text-red-500">Phone Number is required</p>}
               </div>
+              {formError.find((error) =>
+                error.path.includes("phone_number")
+              ) && <p className="text-red-500">Phone Number is required</p>}
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="date" className="font-semibold">
@@ -256,10 +256,10 @@ export default function BookOffice() {
                   id="date"
                   className="relative appearance-none outline-none w-full py-3 font-semibold [&::-webkit-calendar-picker-indicator]:absolute [&::-webkit-calendar-picker-indicator]:w-full [&::-webkit-calendar-picker-indicator]:h-full [&::-webkit-calendar-picker-indicator]:opacity-0"
                 />
-                {formError.find((error) =>
-                  error.path.includes("started_at")
-                ) && <p className="text-red-500">Started At is required</p>}
               </div>
+              {formError.find((error) => error.path.includes("started_at")) && (
+                <p className="text-red-500">Started At is required</p>
+              )}
             </div>
           </div>
           <hr className="border-[#F6F5FD]" />
