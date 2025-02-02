@@ -57,7 +57,7 @@ export default function SuccessBooking() {
         <hr className="border-[#F6F5FD]" />
         <p className="font-semibold leading-[28px] text-center">
           Your order is being processed. We will notify you of the status via
-          SMS
+          WhatsApp
         </p>
         <Link
           to={"/check-booking"}

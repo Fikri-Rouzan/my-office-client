@@ -2,7 +2,7 @@ import { useState } from "react";
 import { z } from "zod";
 import { BookingDetails } from "../types/type";
 import { viewBookingSchema } from "../types/validationBooking";
-import axios from "axios";
+import apiClient, { isAxiosError } from "../services/apiService";
 
 export default function CheckBooking() {
   const [formData, setFormData] = useState({
@@ -46,23 +46,15 @@ export default function CheckBooking() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post(
-        "http://127.0.0.1:8000/api/check-booking",
-        {
-          ...formData,
-        },
-        {
-          headers: {
-            "X-API-KEY": "andg620nfgyip3sbcmakwyrt369mfvcbjakgukn3",
-          },
-        }
-      );
+      const response = await apiClient.post("/check-booking", {
+        ...formData,
+      });
 
       console.log("We are checking your booking", response.data.data);
 
       setBookingDetails(response.data.data);
     } catch (error: unknown) {
-      if (axios.isAxiosError(error)) {
+      if (isAxiosError(error)) {
         console.error("Error submitting form:", error.message);
         setError(error.message);
       } else {

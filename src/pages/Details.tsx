@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Office } from "../types/type";
-import axios from "axios";
+import apiClient from "../services/apiService";
 
 export default function Details() {
   const { slug } = useParams<{ slug: string }>();
@@ -14,12 +14,8 @@ export default function Details() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    axios
-      .get(`http://127.0.0.1:8000/api/office/${slug}`, {
-        headers: {
-          "X-API-KEY": "andg620nfgyip3sbcmakwyrt369mfvcbjakgukn3",
-        },
-      })
+    apiClient
+      .get(`/office/${slug}`)
       .then((response) => {
         setOffice(response.data.data);
         setLoading(false);
