@@ -1,16 +1,13 @@
-# My Office
+# My Office (Client)
 
-## About My Office
+## ℹ️ About
 
-## Features
+## ✨ Features
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- Programming Language: TypeScript.
-- Markup Language: HTML.
-- Stylesheet Language: CSS.
-- Framework: Tailwind CSS.
-- Libraries: React, React Router, Swiper, Axios, and Zod.
-- Tool: Vite.
-- API Testing: Postman.
-- Software: Visual Studio Code.
+- 🌐 **Programming Language:** TypeScript.
+- 🧩 **Framework:** Tailwind CSS.
+- ⚛️ **Libraries:** React, React Router, Swiper, Axios, and Zod.
+- ⚡ **Tool:** Vite.
+- 💻 **Software:** Visual Studio Code and Postman.

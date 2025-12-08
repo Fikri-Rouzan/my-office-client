@@ -38,7 +38,7 @@ export default function CityDetails() {
     return <p>Category not found</p>;
   }
 
-  const baseURL = "http://127.0.0.1:8000/storage";
+  const baseURL = import.meta.env.VITE_REACT_STORAGE_URL;
 
   return (
     <>

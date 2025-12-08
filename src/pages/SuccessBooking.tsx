@@ -4,7 +4,7 @@ export default function SuccessBooking() {
   const location = useLocation();
   const { office, booking } = location.state;
 
-  const baseURL = "http://127.0.0.1:8000/storage";
+  const baseURL = import.meta.env.VITE_REACT_STORAGE_URL;
 
   return (
     <section className="flex flex-1 py-10">

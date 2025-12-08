@@ -20,7 +20,7 @@ export default function CheckBooking() {
 
   const [error, setError] = useState<string | null>(null);
 
-  const baseURL = "http://127.0.0.1:8000/storage";
+  const baseURL = import.meta.env.VITE_REACT_STORAGE_URL;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
@@ -77,7 +77,7 @@ export default function CheckBooking() {
         </h1>
         <div className="absolute w-full h-full bg-[linear-gradient(180deg,_rgba(0,0,0,0)_0%,#000000_91.83%)] z-10" />
         <img
-          src="assets/images/thumbnails/thumbnail-details-5.png"
+          src="assets/images/thumbnails/thumbnail-details.png"
           className="absolute w-full h-full object-cover object-top"
           alt=""
         />

@@ -1,7 +1,7 @@
 import { City } from "../types/type";
 
 export default function CityCard({ city }: CityCardProps) {
-  const baseURL = "http://127.0.0.1:8000/storage";
+  const baseURL = import.meta.env.VITE_REACT_STORAGE_URL;
 
   return (
     <div className="card">

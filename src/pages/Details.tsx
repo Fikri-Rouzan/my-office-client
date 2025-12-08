@@ -38,7 +38,7 @@ export default function Details() {
     return <p>Data not found</p>;
   }
 
-  const baseURL = "http://127.0.0.1:8000/storage";
+  const baseURL = import.meta.env.VITE_REACT_STORAGE_URL;
 
   return (
     <>
@@ -92,27 +92,27 @@ export default function Details() {
             <div className="flex flex-col gap-[6px]">
               <div className="flex items-center gap-1">
                 <img
-                  src="/assets/images/icons/Star 1.svg"
+                  src="/assets/images/icons/star.svg"
                   className="w-5 h-5"
                   alt="star"
                 />
                 <img
-                  src="/assets/images/icons/Star 1.svg"
+                  src="/assets/images/icons/star.svg"
                   className="w-5 h-5"
                   alt="star"
                 />
                 <img
-                  src="/assets/images/icons/Star 1.svg"
+                  src="/assets/images/icons/star.svg"
                   className="w-5 h-5"
                   alt="star"
                 />
                 <img
-                  src="/assets/images/icons/Star 1.svg"
+                  src="/assets/images/icons/star.svg"
                   className="w-5 h-5"
                   alt="star"
                 />
                 <img
-                  src="/assets/images/icons/Star 1.svg"
+                  src="/assets/images/icons/star.svg"
                   className="w-5 h-5"
                   alt="star"
                 />

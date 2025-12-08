@@ -83,7 +83,7 @@ export default function BookOffice() {
     return <p>Data not found</p>;
   }
 
-  const baseURL = "http://127.0.0.1:8000/storage";
+  const baseURL = import.meta.env.VITE_REACT_STORAGE_URL;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
@@ -145,7 +145,7 @@ export default function BookOffice() {
         </h1>
         <div className="absolute w-full h-full bg-[linear-gradient(180deg,_rgba(0,0,0,0)_0%,#000000_91.83%)] z-10" />
         <img
-          src="/assets/images/thumbnails/thumbnail-details-4.png"
+          src={`${baseURL}/${office.thumbnail}`}
           className="absolute w-full h-full object-cover object-top"
           alt=""
         />
@@ -322,7 +322,7 @@ export default function BookOffice() {
             </div>
             <div className="relative rounded-xl p-[10px_20px] gap-[10px] bg-[#000929] text-white">
               <img
-                src="/assets/images/icons/Polygon 1.svg"
+                src="/assets/images/icons/polygon.svg"
                 className="absolute -top-[15px] right-[10px] "
                 alt=""
               />

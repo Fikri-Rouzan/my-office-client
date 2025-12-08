@@ -67,11 +67,11 @@ export default function HomeHeroWrapper() {
       </section>
       <div className="flex flex-col pt-[150px] pb-10 px-[120px] gap-10 bg-[#0D903A]">
         <div className="logo-contianer flex items-center justify-center flex-wrap max-w-[1130px] h-[38px] mx-auto gap-[60px]">
-          <img src="/assets/images/logos/TESLA.svg" alt="clients logo" />
-          <img src="/assets/images/logos/Libra 2.svg" alt="clients logo" />
-          <img src="/assets/images/logos/Binance logo.svg" alt="clients logo" />
-          <img src="/assets/images/logos/Facebook 7.svg" alt="clients logo" />
-          <img src="/assets/images/logos/Microsoft 6.svg" alt="clients logo" />
+          <img src="/assets/images/logos/tesla.svg" alt="clients logo" />
+          <img src="/assets/images/logos/libra.svg" alt="clients logo" />
+          <img src="/assets/images/logos/binance.svg" alt="clients logo" />
+          <img src="/assets/images/logos/facebook.svg" alt="clients logo" />
+          <img src="/assets/images/logos/microsoft.svg" alt="clients logo" />
         </div>
         <div className="flex justify-center gap-[50px]">
           <div className="flex flex-col gap-[2px] text-center">

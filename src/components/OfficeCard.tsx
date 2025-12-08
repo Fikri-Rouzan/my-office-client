@@ -1,7 +1,7 @@
 import { Office } from "../types/type";
 
 export default function OfficeCard({ office }: OfficeCardProps) {
-  const baseURL = "http://127.0.0.1:8000/storage";
+  const baseURL = import.meta.env.VITE_REACT_STORAGE_URL;
 
   return (
     <div className="card">
@@ -46,7 +46,7 @@ export default function OfficeCard({ office }: OfficeCardProps) {
             <div className="flex items-center justify-end gap-[6px]">
               <p className="font-semibold">5/5</p>
               <img
-                src="/assets/images/icons/Star 1.svg"
+                src="/assets/images/icons/star.svg"
                 className="w-6 h-6"
                 alt="icon"
               />

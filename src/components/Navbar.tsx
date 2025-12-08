@@ -12,13 +12,13 @@ export default function Navbar() {
             <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <a href="">Popular</a>
+            <a href="#">Popular</a>
           </li>
           <li>
-            <a href="">Categories</a>
+            <a href="#">Categories</a>
           </li>
           <li>
-            <a href="">Events</a>
+            <a href="#">Events</a>
           </li>
           <li>
             <Link to={"/check-booking"}>My Booking</Link>
