@@ -2,110 +2,119 @@ export default function HomeBenefitWrapper() {
   return (
     <section
       id="Benefits"
-      className="flex items-center justify-center w-[1015px] mx-auto gap-[100px] mt-[100px]"
+      className="flex flex-col lg:flex-row items-center justify-center w-full max-w-[1015px] mx-auto gap-10 lg:gap-[100px] mt-10 lg:mt-[100px] px-4"
     >
-      <h2 className="font-bold text-[32px] leading-[48px] text-nowrap">
-        We Might Good <br />
+      <h2 className="font-bold text-2xl lg:text-[32px] leading-8 lg:leading-[48px] text-center lg:text-left whitespace-normal lg:whitespace-nowrap shrink-0">
+        Why We Are Great <br className="hidden lg:block" />
         For Your Business
       </h2>
-      <div className="grid grid-cols-2 gap-[30px]">
-        <div className="flex items-center gap-4">
-          <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
+
+      {/* Grid Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-[30px] w-full">
+        <div className="flex items-center gap-4 bg-white p-4 rounded-2xl lg:p-0 lg:bg-transparent lg:rounded-none border border-gray-100 lg:border-none shadow-sm lg:shadow-none">
+          <div className="flex items-center justify-center shrink-0 w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] rounded-[23px] bg-white overflow-hidden border lg:border-none border-gray-100">
             <img
               src="/assets/images/icons/security-user.svg"
-              className="w-[34px] h-[34px]"
+              className="w-[28px] h-[28px] lg:w-[34px] lg:h-[34px]"
               alt="icon"
             />
           </div>
-          <div className="flex flex-col gap-[5px]">
+          <div className="flex flex-col gap-[2px] lg:gap-[5px]">
             <p className="font-bold text-lg leading-[27px]">
               Privacy-First Design
             </p>
             <p className="text-sm leading-[24px]">
-              Ensures a distraction-free workspace for better focus and
-              productivity
+              Ensures a distraction-free environment designed for focus and
+              productivity.
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
+        <div className="flex items-center gap-4 bg-white p-4 rounded-2xl lg:p-0 lg:bg-transparent lg:rounded-none border border-gray-100 lg:border-none shadow-sm lg:shadow-none">
+          <div className="flex items-center justify-center shrink-0 w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] rounded-[23px] bg-white overflow-hidden border lg:border-none border-gray-100">
             <img
               src="/assets/images/icons/group.svg"
-              className="w-[34px] h-[34px]"
+              className="w-[28px] h-[28px] lg:w-[34px] lg:h-[34px]"
               alt="icon"
             />
           </div>
-          <div className="flex flex-col gap-[5px]">
-            <p className="font-bold text-lg leading-[27px]">Easy Move Access</p>
+          <div className="flex flex-col gap-[2px] lg:gap-[5px]">
+            <p className="font-bold text-lg leading-[27px]">
+              Seamless Accessibility
+            </p>
             <p className="text-sm leading-[24px]">
-              Provides seamless access for effortless mobility and convenience
+              Located strategically for effortless mobility and convenient
+              access.
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
+        <div className="flex items-center gap-4 bg-white p-4 rounded-2xl lg:p-0 lg:bg-transparent lg:rounded-none border border-gray-100 lg:border-none shadow-sm lg:shadow-none">
+          <div className="flex items-center justify-center shrink-0 w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] rounded-[23px] bg-white overflow-hidden border lg:border-none border-gray-100">
             <img
               src="/assets/images/icons/3dcube.svg"
-              className="w-[34px] h-[34px]"
+              className="w-[28px] h-[28px] lg:w-[34px] lg:h-[34px]"
               alt="icon"
             />
           </div>
-          <div className="flex flex-col gap-[5px]">
+          <div className="flex flex-col gap-[2px] lg:gap-[5px]">
             <p className="font-bold text-lg leading-[27px]">
-              Flexibility Spaces
+              Flexible Workspaces
             </p>
             <p className="text-sm leading-[24px]">
-              Offers adaptable workspaces tailored to various needs
+              Adaptable layouts tailored to meet your diverse business needs.
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
+        <div className="flex items-center gap-4 bg-white p-4 rounded-2xl lg:p-0 lg:bg-transparent lg:rounded-none border border-gray-100 lg:border-none shadow-sm lg:shadow-none">
+          <div className="flex items-center justify-center shrink-0 w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] rounded-[23px] bg-white overflow-hidden border lg:border-none border-gray-100">
             <img
               src="/assets/images/icons/cup.svg"
-              className="w-[34px] h-[34px]"
+              className="w-[28px] h-[28px] lg:w-[34px] lg:h-[34px]"
               alt="icon"
             />
           </div>
-          <div className="flex flex-col gap-[5px]">
-            <p className="font-bold text-lg leading-[27px]">Top-Rated Office</p>
+          <div className="flex flex-col gap-[2px] lg:gap-[5px]">
+            <p className="font-bold text-lg leading-[27px]">
+              Premium Facilities
+            </p>
             <p className="text-sm leading-[24px]">
-              Delivers high-quality office standards for maximum comfort and
-              efficiency
+              High-quality office standards designed for maximum comfort and
+              efficiency.
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
+        <div className="flex items-center gap-4 bg-white p-4 rounded-2xl lg:p-0 lg:bg-transparent lg:rounded-none border border-gray-100 lg:border-none shadow-sm lg:shadow-none">
+          <div className="flex items-center justify-center shrink-0 w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] rounded-[23px] bg-white overflow-hidden border lg:border-none border-gray-100">
             <img
               src="/assets/images/icons/coffee.svg"
-              className="w-[34px] h-[34px]"
+              className="w-[28px] h-[28px] lg:w-[34px] lg:h-[34px]"
               alt="icon"
             />
           </div>
-          <div className="flex flex-col gap-[5px]">
+          <div className="flex flex-col gap-[2px] lg:gap-[5px]">
             <p className="font-bold text-lg leading-[27px]">
-              Extra Snacks Available
+              Complimentary Refreshments
             </p>
             <p className="text-sm leading-[24px]">
-              Keeps you energized with complimentary snacks for a productive day
+              Stay energized with free snacks and drinks to fuel your productive
+              day.
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
+        <div className="flex items-center gap-4 bg-white p-4 rounded-2xl lg:p-0 lg:bg-transparent lg:rounded-none border border-gray-100 lg:border-none shadow-sm lg:shadow-none">
+          <div className="flex items-center justify-center shrink-0 w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] rounded-[23px] bg-white overflow-hidden border lg:border-none border-gray-100">
             <img
               src="/assets/images/icons/home-trend-up.svg"
-              className="w-[34px] h-[34px]"
+              className="w-[28px] h-[28px] lg:w-[34px] lg:h-[34px]"
               alt="icon"
             />
           </div>
-          <div className="flex flex-col gap-[5px]">
+          <div className="flex flex-col gap-[2px] lg:gap-[5px]">
             <p className="font-bold text-lg leading-[27px]">
-              Sustain for Business
+              Sustainable Growth
             </p>
             <p className="text-sm leading-[24px]">
-              Supports long-term business growth with reliable facilities
+              Facilities designed to support your business's long-term success
+              and stability.
             </p>
           </div>
         </div>
