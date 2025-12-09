@@ -7,7 +7,7 @@ export default function HomeHeroWrapper() {
       >
         <div
           id="Hero-Image"
-          className="absolute top-0 right-0 w-full h-[400px] lg:w-[calc(100%-((100%-1130px)/2)-305px)] lg:h-[720px] lg:rounded-bl-[40px] overflow-hidden z-0"
+          className="absolute top-0 right-0 w-full h-[400px] lg:w-[calc(100%-((100%-1130px)/2)-305px)] lg:h-[720px] overflow-hidden z-0"
         >
           <img
             src="/assets/images/backgrounds/banner.png"
@@ -16,7 +16,7 @@ export default function HomeHeroWrapper() {
           />
           <div className="lg:hidden absolute inset-0 bg-gradient-to-b from-white/40 to-white"></div>
         </div>
-        <div className="relative w-full max-w-[1130px] mx-auto px-4 lg:px-0 z-10 pt-[100px] lg:pt-[70px]">
+        <div className="relative w-full max-w-[1130px] mx-auto px-4 lg:px-0 z-10 pt-[100px] lg:pt-[70px] mb-[50px] lg:mb-0">
           <div
             id="Hero-Text"
             className="flex flex-col w-full lg:max-w-[650px] h-fit rounded-[30px] border border-[#E0DEF7] p-6 lg:p-10 gap-[20px] lg:gap-[30px] bg-white shadow-lg lg:shadow-none"
@@ -75,7 +75,7 @@ export default function HomeHeroWrapper() {
       </section>
 
       <div className="flex flex-col pt-10 lg:pt-[150px] pb-10 px-4 lg:px-[120px] gap-10 bg-[#0D903A]">
-        <div className="logo-contianer flex items-center justify-center flex-wrap max-w-[1130px] mx-auto gap-8 lg:gap-[60px] opacity-80 lg:opacity-100">
+        <div className="logo-container flex items-center justify-center flex-wrap max-w-[1130px] mx-auto gap-8 lg:gap-[60px] opacity-80 lg:opacity-100">
           <img
             src="/assets/images/logos/tesla.svg"
             className="h-6 lg:h-auto"
