@@ -51,7 +51,7 @@ export default function HomeCityWrapper() {
         </h2>
         <a
           href="#"
-          className="rounded-full py-3 px-5 bg-white font-bold border border-gray-200 md:border-none shadow-sm md:shadow-none hover:bg-gray-50 transition"
+          className="rounded-full py-3 px-5 bg-white font-bold border border-gray-200 md:border-none shadow-sm md:shadow-none hover:bg-gray-100 transition"
         >
           Explore All Cities
         </a>
