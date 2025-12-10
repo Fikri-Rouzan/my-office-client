@@ -115,6 +115,7 @@ export default function CheckBooking() {
                 placeholder="Type your booking ID"
               />
             </div>
+
             {formErrors.find((error) =>
               error.path.includes("booking_trx_id")
             ) && (
@@ -143,6 +144,7 @@ export default function CheckBooking() {
                 placeholder="Type your phone number"
               />
             </div>
+
             {formErrors.find((error) =>
               error.path.includes("phone_number")
             ) && (
