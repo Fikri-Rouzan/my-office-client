@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./pages/Home";
-import Details from "./pages/Details";
+import OfficeDetails from "./pages/OfficeDetails";
 import BookOffice from "./pages/BookOffice";
 import CityDetails from "./pages/CityDetails";
 import SuccessBooking from "./pages/SuccessBooking";
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/office/:slug" element={<Details />} />
+        <Route path="/office/:slug" element={<OfficeDetails />} />
         <Route path="/office/:slug/book" element={<BookOffice />} />
         <Route path="/city/:slug" element={<CityDetails />} />
         <Route path="/success-booking" element={<SuccessBooking />} />

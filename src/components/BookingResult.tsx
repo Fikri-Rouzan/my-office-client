@@ -133,7 +133,7 @@ export default function BookingResult({ bookingDetails }: BookingResultProps) {
           <div className="flex items-center justify-between">
             <p className="font-semibold">Duration</p>
             <p className="font-bold text-sm sm:text-base">
-              {bookingDetails.duration} Days Working
+              {bookingDetails.duration} Workdays Access
             </p>
           </div>
           <div className="flex items-center justify-between">
@@ -146,7 +146,7 @@ export default function BookingResult({ bookingDetails }: BookingResultProps) {
 
         <hr className="border-[#F6F5FD]" />
 
-        <h2 className="font-bold text-lg">Bonus Packages For You</h2>
+        <h2 className="font-bold text-lg">Included Amenities</h2>
         <div className="flex flex-col sm:flex-row justify-between gap-4">
           <div className="flex items-center gap-4">
             <img
